@@ -1,8 +1,8 @@
-import HomeScreen from "./src/screens/HomeScreen/HomeScreen";
+import Routes from "./src/navigation/Routes";
 
 function App(){
   return (
-    <HomeScreen/>
+    <Routes/>
   );
 }
 
