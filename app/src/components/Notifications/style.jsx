@@ -4,11 +4,12 @@ export const styles = StyleSheet.create({
         backgroundColor:"#ffffff",
         borderRadius:30,
         minHeight:250,
-        padding:20
+        padding:20,
+        gap:10
     },
     notificationText:{
         fontSize:20,
         color:"#000000",
-        fontFamily:"Arial"
+        fontWeight:"600"
     }
 })

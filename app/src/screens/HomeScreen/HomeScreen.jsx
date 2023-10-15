@@ -15,7 +15,7 @@ const HomeScreen = () => {
   return (
     <View style={styles.main}>
      <View style={styles.searchBar}>
-      <TextInput placeholder="Search..." placeholderTextColor="#555555" style={styles.searchInput}/>
+      <TextInput placeholder="Axtarış..." placeholderTextColor="#555555" style={styles.searchInput}/>
       <View style={styles.profile}></View>
      </View>
      <View style={{width:"100%",objectFit:"cover"}}>

@@ -1,0 +1,7 @@
+['Cherry_(including_sour)___Powdery_mildew',
+ 'Potato___Early_blight',
+ 'Soybean___healthy',
+ 'Strawberry___healthy',
+ 'Tomato___Leaf_Mold',
+ 'Tomato___Spider_mites Two-spotted_spider_mite',
+ 'Tomato___healthy']

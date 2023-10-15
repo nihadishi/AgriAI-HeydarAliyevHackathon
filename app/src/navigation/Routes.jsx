@@ -7,6 +7,7 @@ import StartScreen from '../screens/StartScreen/StartScreen';
 import NoInternetScreen from '../screens/NoInternetScreen/NoInternetScreen';
 import { BottomNavigation } from '../components/BottomNavigation/BottomNavigation';
 import DetectScreen from '../screens/DetectScreen/DetectScreen';
+import ResultScreen from '../screens/ResultScreen/ResultScreen';
 const Stack = createNativeStackNavigator();
 
 const Routes = () => {
@@ -52,6 +53,13 @@ const Routes = () => {
           <Stack.Screen
             name="DetectScreen"
             component={DetectScreen}
+            options={{
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="ResultScreen"
+            component={ResultScreen}
             options={{
               headerShown: false,
             }}

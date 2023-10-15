@@ -18,12 +18,12 @@ export const styles = StyleSheet.create({
         borderRadius:30,
         backgroundColor:"#ffffff",
         width:"83%",
-        fontSize:15,
-        paddingHorizontal:10
+        fontSize:18,
+        paddingHorizontal:20
     },
     profile:{
         borderRadius:150,
-        backgroundColor:"blue",
+        backgroundColor:"#abccba",
         width:49
     }
 })
