@@ -3,14 +3,15 @@ import React, { useEffect, useState } from 'react'
 import {styles} from "./style"
 import Temperature from '../../components/Temperature/Temperature'
 import Notification from '../../components/Notifications/Notification'
+import { BottomNavigation } from '../../components/BottomNavigation/BottomNavigation'
 const HomeScreen = () => {
   const [isShownTemperature, setIsShownTemperature] = useState(false);
   useEffect(() => {
    setTimeout(() => {
     setIsShownTemperature(true)
+    console.log("SALAM");
    }, 3500);
   }, [])
-  
   return (
     <View style={styles.main}>
      <View style={styles.searchBar}>

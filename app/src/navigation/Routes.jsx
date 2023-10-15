@@ -1,4 +1,3 @@
-import {View, Text} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -6,7 +5,8 @@ import NetInfo from '@react-native-community/netinfo';
 import HomeScreen from '../screens/HomeScreen/HomeScreen';
 import StartScreen from '../screens/StartScreen/StartScreen';
 import NoInternetScreen from '../screens/NoInternetScreen/NoInternetScreen';
-import BottomNavigation from "../components/BottomNavigation/BottomNavigation"
+import { BottomNavigation } from '../components/BottomNavigation/BottomNavigation';
+import DetectScreen from '../screens/DetectScreen/DetectScreen';
 const Stack = createNativeStackNavigator();
 
 const Routes = () => {
@@ -24,7 +24,7 @@ const Routes = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsStart(false);
-    }, 1500);
+    }, 4500);
   }, []);
 
   return (
@@ -49,13 +49,13 @@ const Routes = () => {
               headerShown: false,
             }}
           />
-          {/* <Stack.Screen
-            name="HomeScreen"
-            component={HomeScreen}
+          <Stack.Screen
+            name="DetectScreen"
+            component={DetectScreen}
             options={{
               headerShown: false,
             }}
-          /> */}
+          />
         </Stack.Navigator>
         <BottomNavigation/></>
       ) : (
